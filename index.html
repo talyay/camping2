@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>קמפינג במכמורת</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- מסך פתיחה -->
+  <div id="landing-screen">
+    <button id="enter-button">6.6</button>
+  </div>
+
+  <!-- כותרת עם רקע -->
+  <header>
+    <h1>🌅 קמפינג במכמורת</h1>
+  </header>
+
+  <!-- ניווט טאבים -->
+  <nav>
+    <button class="tab-btn active" data-tab="gear">🎒 ציוד</button>
+    <button class="tab-btn" data-tab="location">📍 על המקום</button>
+  </nav>
+
+  <!-- טאבים -->
+  <section id="gear" class="tab-content active">
+    <h2>ציוד ומשימות</h2>
+    <div class="controls">
+      <input type="text" id="search" placeholder="🔍 חיפוש פריט..."/>
+      <button id="export-csv">⬇️ הורד CSV</button>
+      <button id="toggle-dark">🌓 מצב כהה</button>
+    </div>
+    <div class="table-wrap">
+      <table id="gear-table">
+        <thead>
+          <tr>
+            <th>פריט</th>
+            <th>קטגוריה</th>
+            <th>מי מביא</th>
+            <th>בוצע</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- נמלא ב־JS -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="location" class="tab-content">
+    <h2>על המקום</h2>
+    <img class="placeholder" src="Screenshot 2025-05-18 at 12.14.32.png" alt="חוף מכמורת"/>
+    <p>מיקום הקמפינג שלנו הוא במכמורת. אני בחיים לא הייתי שם, אבל יהיה נדיר.</p>
+    <p><a href="https://he.wikipedia.org/wiki/מכמורת" target="_blank">לידיעתכם</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
